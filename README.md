@@ -1,3 +1,9 @@
+### Anggota Kelompok:
+1.Lilis : 20230040178
+2. Marwa Nada N: 20230040179
+3. Syahrul Aidil: 20230040166
+
+
 ### DATABASE: post_office
 - Users: id, name, email, password, created_at, updated_at
 - Shipments: id, user_id, status, origin, destination, created_at, updated_at
