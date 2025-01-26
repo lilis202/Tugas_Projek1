@@ -48,10 +48,10 @@ const getShipmentsById = async (id) => {
     return row
 }
 
-const updateShipmentsById = async (id, status) => {
+const updateShipmentsById = async (id, shipments_id, status, location) => {
     const query = 'UPDATE shipments SET status = ? WHERE id = ?'
     try {
-        const [result] = await db.execute(query, [status, id])
+        const [result] = await db.execute(query, [shipment_id, status, location, id])
         return result
     } catch (error) {
         throw new Error('Error updating shipments: ' + error.message)
