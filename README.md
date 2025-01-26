@@ -22,7 +22,7 @@
 - PUT /trackinglogs/:id
 - POST /register
 - POST /login
-- GET /current
+- GET /user
 - GET /weather?q=:query
 - DELETE /users/:id
 - GET /users/:id
