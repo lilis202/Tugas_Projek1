@@ -63,10 +63,10 @@ const getTrackingLogsById = async (req, res) => {
 
 const updateTrackingLogsById = async (req, res) => {
     const { id } = req.params
-    const { status } = req.body
+    const { shipments_id, status, location } = req.body
 
     try {
-        const add = await tracking_logsModel.updateTrackingLogsById(id, status)
+        const add = await tracking_logsModel.updateTrackingLogsById(id, shipments_id, status,location)
         if (add) {
             return res.status(200).json({ message: 'Update tracking logs sukses' })
         }
